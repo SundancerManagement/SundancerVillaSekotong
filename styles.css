@@ -1,0 +1,117 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting body styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #83918b;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Container to hold the profile and links */
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+
+}
+
+/* Profile logo image */
+.profile img {
+    width: 280px;
+    height: 224px;
+    margin-bottom: 15px;
+}
+
+.spacer {
+    height: 3px; /* Mengatur jarak 3 baris */
+}
+
+/* Links styling */
+.links a {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+/* Hover effect on links */
+.links a:hover {
+    background-color: #dcdcdc;
+}
+
+/* WhatsApp link styling */
+.whatsapp-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* WhatsApp icon */
+.whatsapp-link a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Hover effect for WhatsApp button */
+.whatsapp-link a:hover {
+    background-color: #dcdcdc;
+}
+
+/* Footer styling */
+footer p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #FF8600;
+    font-style: normal;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .links a, .whatsapp-link a {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .profile img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .whatsapp-link a img {
+        width: 20px;
+        height: 20px;
+    }
+}
